@@ -12,10 +12,82 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/heightContainer"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <View
+        style="@style/ContainerComponents"
+        android:id="@+id/weightContainer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heightContainer"
         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addHeight"
+        style="@style/RoundButton"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/heightContainer"
+        app:layout_constraintEnd_toEndOf="@+id/heightContainer"
+        app:layout_constraintTop_toTopOf="@+id/heightContainer" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addWeight"
+        style="@style/RoundButton"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/weightContainer"
+        app:layout_constraintEnd_toEndOf="@+id/weightContainer"
+        app:layout_constraintTop_toTopOf="@+id/weightContainer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dimHeight"
+        style="@style/RoundButton"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/heightContainer"
+        app:layout_constraintStart_toStartOf="@+id/heightContainer"
+        app:layout_constraintTop_toTopOf="@+id/heightContainer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dimWeight"
+        style="@style/RoundButton"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/weightContainer"
+        app:layout_constraintStart_toStartOf="@+id/weightContainer"
+        app:layout_constraintTop_toTopOf="@+id/weightContainer" />
+
+    <TextView
+        android:id="@+id/height"
+        style="@style/Text"
+        android:text="@string/height"
+        app:layout_constraintBottom_toBottomOf="@+id/heightContainer"
+        app:layout_constraintEnd_toStartOf="@+id/addHeight"
+        app:layout_constraintStart_toEndOf="@+id/dimHeight"
+        app:layout_constraintTop_toTopOf="@+id/heightContainer" />
+
+    <TextView
+        android:id="@+id/weight"
+        style="@style/Text"
+        android:text="@string/height"
+        app:layout_constraintBottom_toBottomOf="@+id/weightContainer"
+        app:layout_constraintEnd_toStartOf="@+id/addWeight"
+        app:layout_constraintStart_toEndOf="@+id/dimWeight"
+        app:layout_constraintTop_toTopOf="@+id/weightContainer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:text="Calcular IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
