@@ -82,7 +82,7 @@
         app:layout_constraintTop_toTopOf="@+id/weightContainer" />
 
     <TextView
-        android:id="@+id/weight"
+        android:id="@+id/infoHeight"
         style="@style/InfoText"
         android:text="Qual sua altura(cm)?"
         app:layout_constraintBottom_toTopOf="@+id/heightContainer"
@@ -92,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/weight"
+        android:id="@+id/infoWeight"
         style="@style/InfoText"
         android:text="Qual seu peso (kg)?"
         app:layout_constraintBottom_toTopOf="@+id/weightContainer"
