@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/infoHeight"
+        android:id="@+id/lblResult"
         style="@style/InfoText"
         android:text="Resultado"
         app:layout_constraintBottom_toTopOf="@+id/ResultContainer"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <TextView
-        android:id="@+id/height"
+        android:id="@+id/result"
         style="@style/Text"
         android:text="0.0"
         app:layout_constraintBottom_toBottomOf="@+id/ResultContainer"
@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/ResultContainer"
         app:layout_constraintEnd_toEndOf="@+id/ResultContainer"
         app:layout_constraintStart_toStartOf="@+id/ResultContainer"
-        app:layout_constraintTop_toBottomOf="@+id/height" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/calcularNovamente"
